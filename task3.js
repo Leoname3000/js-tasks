@@ -1,6 +1,6 @@
 const readlineSync = require('readline-sync');
 
-let numberLength = readlineSync.question('Сколько чисел загадывать? (от 3 до 6): ');
+let numberLength = readlineSync.question('Сколько цифр загадывать? (от 3 до 6): ');
 
 let trueNumber = '';
 let trueNumberSet = new Set();
@@ -13,11 +13,6 @@ for (let counter = numberLength; counter > 0;) {
         counter--;
     }
 }
-
-//console.log(test);
-console.log(numberLength);
-console.log(trueNumber);
-console.log(trueNumberSet);
 
 let tries = readlineSync.question('За сколько попыток отгадаете?: ');
 let isVictory = false;
